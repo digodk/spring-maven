@@ -24,7 +24,7 @@ public class ClienteEntity {
   @NotNull
   private String nome;
   
-  @Column(unique=true)
+  @Column//(unique=true)
   @NotNull
   private String email;
   
