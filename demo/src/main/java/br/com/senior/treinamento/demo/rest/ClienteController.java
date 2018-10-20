@@ -67,7 +67,7 @@ public class ClienteController {
     return new ResponseEntity<>(resultado.get(), HttpStatus.OK);
   }
 
-  @GetMapping("/clientes")
+ /* @GetMapping("/clientes")
   public ResponseEntity<List<ClienteEntity>> buscarClientes(
       @RequestParam(value = "quantidade", required = false) Long quantidade,
       @RequestParam(value = "email", required = false) String email) {
@@ -82,5 +82,5 @@ public class ClienteController {
       listaCliente = listaCliente.stream().limit(quantidade).collect(Collectors.toList());
     }
     return new ResponseEntity<List<ClienteEntity>>(listaCliente, HttpStatus.OK);
-  }
+  }*/
 }

@@ -1,6 +1,5 @@
 package br.com.senior.treinamento.demo.entidades;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import java.time.LocalDateTime;
@@ -11,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import br.com.senior.treinamento.demo.DemoApplication;
-import br.com.senior.treinamento.demo.respository.PedidoRepository;
+import br.com.senior.treinamento.demo.repository.PedidoRepository;
 import br.com.senior.treinamento.demo.services.ClienteService;
 import br.com.senior.treinamento.demo.services.PedidoService;
 
@@ -36,7 +35,7 @@ public class PedidoTest {
     
     cliente = new ClienteEntity();
     cliente.setNome("Diogo");
-    cliente.setEmail("bbbabb");
+//    cliente.setEmail("bbbabb");
     cliente = clienteService.salvar(cliente);
   }
   
@@ -55,7 +54,7 @@ public class PedidoTest {
     Long quantidadeAnterior = pedidoRepository.count();
     ClienteEntity mockCliente = new ClienteEntity();
     mockCliente.setNome("shhh bb");
-    mockCliente.setEmail("it's ok");
+//    mockCliente.setEmail("it's ok");
     cliente = clienteService.salvar(mockCliente);
     PedidoEntity mockPedido = new PedidoEntity();
     mockPedido.setCliente(mockCliente);

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import br.com.senior.treinamento.demo.entidades.ClienteEntity;
 import br.com.senior.treinamento.demo.entidades.PedidoEntity;
 import br.com.senior.treinamento.demo.entidades.PedidoItemEntity;
-import br.com.senior.treinamento.demo.respository.PedidoItemRepository;
+import br.com.senior.treinamento.demo.repository.PedidoItemRepository;
 
 @Service
 public class PedidoItemService {

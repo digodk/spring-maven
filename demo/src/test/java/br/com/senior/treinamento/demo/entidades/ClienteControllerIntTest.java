@@ -46,7 +46,7 @@ public class ClienteControllerIntTest {
   private static ClienteEntity initCriarCliente() {
     ClienteEntity mockCliente = new ClienteEntity();
     mockCliente.setNome("Diogo");
-    mockCliente.setEmail("ccccc");
+//    mockCliente.setEmail("ccccc");
     return mockCliente;
   }
 

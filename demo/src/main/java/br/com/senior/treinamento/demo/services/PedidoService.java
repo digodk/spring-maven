@@ -5,7 +5,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 import br.com.senior.treinamento.demo.entidades.ClienteEntity;
 import br.com.senior.treinamento.demo.entidades.PedidoEntity;
-import br.com.senior.treinamento.demo.respository.PedidoRepository;
+import br.com.senior.treinamento.demo.repository.PedidoRepository;
 
 @Service
 public class PedidoService {

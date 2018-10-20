@@ -1,6 +1,5 @@
 package br.com.senior.treinamento.demo.entidades;
 
-import java.util.Date;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -24,27 +22,27 @@ public class ClienteEntity {
   @NotNull
   private String nome;
   
-  @Column//(unique=true)
+/*  @Column//(unique=true)
   @NotNull
-  private String email;
+  private String email;*/
   
   @OneToMany(mappedBy = "cliente")
   private List<PedidoEntity> pedidos;
   
-  @Column(name = "DataCriado", nullable = false)
+/*  @Column(name = "DataCriado", nullable = false)
   private Date createdDate;
 
   public Date getCreatedDate() {
     return createdDate;
-  }
+  }*/
   
-  public String getEmail() {
+/*  public String getEmail() {
     return email;
   }
 
   public void setEmail(String email) {
     this.email = email;
-  }
+  }*/
 
   public Long getId() {
     return id;
@@ -62,7 +60,7 @@ public class ClienteEntity {
     this.nome = nome;
   }
 
-  @PrePersist
+/*  @PrePersist
   protected void prePersist() {
     if (this.createdDate == null)
       createdDate = new Date();
@@ -71,7 +69,7 @@ public class ClienteEntity {
   public void setCreatedDate(Date createdDate) {
     this.createdDate = createdDate;
   }
-
+*/
   public List<PedidoEntity> getPedidos() {
     return pedidos;
   }

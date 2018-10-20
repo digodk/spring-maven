@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 import br.com.senior.treinamento.demo.entidades.ClienteEntity;
-import br.com.senior.treinamento.demo.respository.ClienteRepository;
+import br.com.senior.treinamento.demo.repository.ClienteRepository;
 
 @Service
 public class ClienteService {
@@ -35,9 +35,9 @@ public class ClienteService {
     return clienteRepository.findAll();
   }
   
-  public List<ClienteEntity> buscarPorEmail(String email) {
+  /*public List<ClienteEntity> buscarPorEmail(String email) {
     return clienteRepository.findByEmailIgnoreCase(email);
-  }
+  }*/
 
   public ClienteService(ClienteRepository clienteRepository) {
     this.clienteRepository = clienteRepository;
